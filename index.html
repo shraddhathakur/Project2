@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" media=”screen and (min-width:320px) and (max-width:992px) href="style.css">
+    <link rel = "shortcut icon" type = "image/x-icon" href = "icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>GLITZ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="Modal.js"></script>
+    
+    <style>
+      @media screen and (min-width: 600px) {
+          .marq{
+         background-color: #f2f2f2;margin-left: 1%;height: 5%; text-align: left;padding-top: 1%;margin-right: 8%;
+         background-size: contain;border-width: thick;margin-bottom: 30px;padding: 1%;width:15%;position:absolute;
+
+      }
+      .panel{}
+      .pp{}
+      .flip{}
+    }
+      footer{
+      border: 1px solid pink;
+      margin: 5px; margin-bottom: 15px; padding: 18px; 
+      background-color: pink;
+      color: white ; margin-bottom: 5px;
+    }
+      body {
+          margin: 0;
+    
+}
+      .angle {
+          margin: -75px;
+          top: 350px;
+          height: 700px;
+          background-image: url("img2.jpg");
+         transform: rotate(-5deg);
+         background-size :80%;
+         background-position-x: 70%; 
+          z-index: 5;
+          
+      }
+  
+      .revAngle {
+          margin: -75px;
+          width: 150%;
+          height: 700px;
+          background-image: url("img7.jpg");
+          background-size: 70%;
+          transform: rotate(5deg);
+          z-index: 5;
+      }
+  
+      .strait1 {
+          height: 700px;
+          background-image: url("img1.jpg");
+          background-size: 105%
+
+      }
+      .strait2 {
+          height: 700px;
+          background-image: url("img5.jpg");
+          background-size: 100%;
+
+      }
+      .strait3 {
+          height: 700px;
+          background-image: url("img4.jpg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+
+
+      }
+       {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: pink;
+    padding: 5px 10px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+a:hover {
+    text-decoration: underline;
+}
+.logo a:hover {
+    text-decoration: none;
+}
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.toggle a {
+    font-size: 20px;
+}
+
+.button{
+  text-align: right;
+}
+.button.secondary {
+    text-align: right;
+}
+  #modal_wrapper.overlay::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+  }
+
+  #modal_window {
+    display: none;
+    z-index: 200;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    overflow: auto;
+    padding: 10px 20px;
+    background: #fff;
+    border: 5px solid #999;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  #modal_wrapper.overlay #modal_window {
+    display: block;
+  }
+  </style>
+
+
+
+    </head>
+  <body>
+
+<nav>
+    <ul class="menu">
+        <li class="logo"><a href="index.html">GLITZ</a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item"><a href="#">Men</a></li>
+        <li class="item"><a href="#">Women</a></li>
+        <li class="item"><a href="#">Blog</a></li>
+        <li class="item"><a href="#">Contact</a>
+        </li>
+        <li class="item button"><a href="SignIn.html">Log In</a></li>
+      <li class="item button secondary"><a href="SignUp.html">Sign Up</a></li>  
+          </ul>
+</nav>
+<!--</div>
+  <a class="active" href="http://35.165.20.219:8080/contact">Contact</a>
+  <a class="active" href="http://35.165.20.219:8080/about">About</a>
+  <a class="active" href="http://35.165.20.219:8080/log">LogIn</a>
+  <a class="active" href="http://35.165.20.219:8080/log">SignUp</a>
+ 
+    
+   -->
+  <!-- when user is logged in -->
+
+<!--  <a class="active" href="/content">Write</a> -->
+
+
+
+
+
+</div> 
+
+<div class ="marq">
+  <marquee behaviour="alternate" direction="up">
+<h3 style="color: #5F9EA0">LATEST UPDATES!</h3>
+<ol start="a">
+<li>ICON COLLECTION </li>
+<li>THE HOSTING COLLECTION | SHAZÉ</li>
+<li>KURTA + PANTS + DIAMONDS</li>
+<li>DIOR 30 MONTAIGNE BAG + PRANAY BAIDYA</li>
+</ol>
+</marquee>
+</div>
+ 
+         
+
+
+    </marquee>
+  </div>
+</div>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("fast");
+    });
+  });
+</script>  
+<br><br><br><div id="flip" style="border: solid 2px;background-color: #ffe6e6;border-radius:10px;box-shadow: 5px 5px 10px black;border-color: #ffe6e6;margin-left: 35%;margin-right: 35%;">
+<h1 style="text-align:center">Welcome To GLITZ </h1></div>
+<br><br>
+
+<h3 style="text-align:center;margin-left:10%;margin-right:10%;">
+<div id="panel"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sign up to Redeem your chance to win a free pass to Ralph Lauren Fashion Show❞19 In New York 
+  <u><a href="/aboutus">click here</a></u>
+</div></h3>
+
+<!-- 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < 3; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > 3) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    
+</script>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="img2.jpg" style="width:80%;margin-left:10%;margin-right:10%;">
+</div>
+<div class="mySlides fade">
+  <img src="img3.jpg" style="width:80%;margin-left:10%;margin-right:10%;">
+  
+</div>
+<div class="mySlides fade">
+  <img src="img1.jpg" style="width:80%;margin-left:10%;margin-right:10%;">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div> -->
+<div id="pp"><h1 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #5F9EA0;font-size: 400%">❝ This is what we have❞</h1></div>
+<div class="strait1"><h1 style="position:relative;left: 23%;border:solid 2px;top: 300px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;font-size: 500%">❝ Women's Fashion❞</h1>
+</div>
+<div class="angle"><h1 style="transform: rotate(+5deg);z-index: 5;position:relative;right: 23%;border:solid 2px;top: 300px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;font-size: 500%">❝ Fashion Shows ❞</h1>
+</div>
+<div class="strait2"><h1 style="position:relative;left: 23%;border:solid 2px;top: 300px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;font-size: 500%">❝ Hair Care ❞</h1>
+</div>
+<div class="revAngle"><h1 style="transform: rotate(-5deg);z-index: 5;position:relative;right: 29%;border:solid 2px;top: 300px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;font-size: 500%">❝ Makeups Tips ❞</h1>
+</div>
+<div class="strait3"><h1 style="position:relative;left: 23%;border:solid 2px;top: 300px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;font-size: 500%">❝ Men's Fashion ❞</h1>
+</div>
+
+
+
+
+
+
+
+<footer >
+<h2 id="fhead"><center>"Be Yourself"</h2>
+<h4><center>Everyone else is taken</h4></center><br>
+<h5 style="text-align:center">Follow us on</h5>
+<a href="https://www.facebook.com/" style="margin-left:50%"><img src="fb.png" align="center" width="20px" height="20px" alt=""></a>
+<h6 style="text-align:center">©Copyright 2019 by BITS OF GLITZ Blogs. All Rights Reserved.
+    Powered by Amazon Web Services.</h6>
+
+</footer>
+
+  </body>
+</html>
